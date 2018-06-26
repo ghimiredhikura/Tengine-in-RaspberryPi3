@@ -9,23 +9,22 @@ More detail about the library can be found in [tengine official git repository](
 
 For official installation guide please refer to this [install](https://github.com/OAID/Tengine/blob/master/doc/install.md) page. 
 
-#### 1. Tengine Installation in AMD64 PC
-#### 2. Tengine Installation in ARMv7-RaspberryPi3
+### 1. Tengine Installation in ARMv7-RaspberryPi3
 
 This guide gives instructions on how to build and test Tengine in RaspberryPi3 device. 
 
-##### 2.1 Download Source code
+##### 1.1 Download Source code
 ```buildoutcfg
 git clone https://github.com/OAID/tengine/ 
 ```
-##### 2.2 Install Depency Libraries
+##### 1.2 Install Depency Libraries
 ```buildoutcfg
  sudo apt install libprotobuf-dev protobuf-compiler libboost-all-dev libgoogle-glog-dev
 ```
 ```buildoutcfg
  sudo apt install libopencv-dev
 ```
-##### 2.3 Prepare config files 
+##### 1.3 Prepare config files 
 - copy config example file
 ```commandline
 cd ~/tengine
@@ -43,14 +42,14 @@ CONFIG_ARCH_BLAS=y
 By default caffe model serializer option is valid. If you want to support other platforms uncomment them. <br />
 Finally the makefile.config file should look like [makefile.config.RaspberryPi3](./makefile.config.RaspberryPi3)
 
-##### 2.4 Build library
+##### 1.4 Build library
 ```buildoutcfg
 cd ~/tengine
 make
 make install
 ```
 
-##### 2.5 Test (Run Benchmark Examples)
+### 2. Test (Run Benchmark Examples)
 ```buildoutcfg
 cd ~/tengine/examples/benchmark
 mkdir build
