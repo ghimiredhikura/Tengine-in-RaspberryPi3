@@ -17,7 +17,7 @@ This guide gives instructions on how to build and test Tengine in RaspberryPi3 d
 ```buildoutcfg
 git clone https://github.com/OAID/tengine/ 
 ```
-##### 1.2 Install Depency Libraries
+##### 1.2 Install Dependency Libraries
 ```buildoutcfg
  sudo apt install libprotobuf-dev protobuf-compiler libboost-all-dev libgoogle-glog-dev
 ```
